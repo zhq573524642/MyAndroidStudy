@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_title" />
+
+    <Button
+        android:id="@+id/btn_watch_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看笔记" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <AdapterViewFlipper
+            android:id="@+id/adapter_view_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateFirstView="false"
+            android:loopViews="true"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上一张" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下一张" />
+
+            <Button
+                android:id="@+id/btn_auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自动切换" />
+
+            <TextView
+                android:id="@+id/tv_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#ff2929"
+                android:textSize="@dimen/sp_20" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

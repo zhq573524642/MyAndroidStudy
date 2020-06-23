@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_view_viewGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View和ViewGroup"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="通知" />
+
+            <Button
+                android:id="@+id/btn_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Banner"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_snow_fall_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="碎片飘落的控件" />
+
+            <Button
+                android:id="@+id/btn_spring_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="弹性菜单" />
+
+            <Button
+                android:id="@+id/btn_view_touch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View的Touch事件"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_key_listener"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="键盘事件处理" />
+
+            <Button
+                android:id="@+id/btn_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="日历" />
+
+            <Button
+                android:id="@+id/btn_surface_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="转盘摇奖" />
+
+            <Button
+                android:id="@+id/btn_dan_mu_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="弹幕" />
+
+            <Button
+                android:id="@+id/btn_scrolling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ScrollingActivity"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

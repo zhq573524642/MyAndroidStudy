@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_title" />
+
+    <Button
+        android:id="@+id/btn_watch_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看笔记" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#f5db44"
+        android:shadowDx="0"
+        android:selectAllOnFocus="true"
+        android:imeOptions="actionSend"
+        android:shadowDy="0"
+        android:shadowRadius="3.0" />
+</LinearLayout>

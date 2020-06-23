@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_title" />
+
+    <Button
+        android:id="@+id/btn_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EditText"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ImageView"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_many_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="各种控件的使用" />
+
+    <Button
+        android:id="@+id/btn_view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ViewFlipper和AdapterViewFlipper"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_stack_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StackView"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextSwitcher|ImageSwitcher|ViewSwitcher"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_date_time"
+        android:text="Date和Time"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

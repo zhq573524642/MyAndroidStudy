@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhq.exclusivememory">
+    <!-- 百度地图权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".base.APP"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.third_party.map.WalkNavigationActivity"></activity>
+        <activity android:name=".ui.activity.third_party.map.RoutePlanActivity" />
+        <activity android:name=".ui.activity.third_party.map.BaiduPoiSearchActivity" /> <!-- 百度地图显示配置 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="scH1hcEx18qihUCXPKaZeE5d0zwl7ZLU" /> <!-- 百度定位服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name=".ui.activity.third_party.map.BaiduMapActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.anim.PathMeasureAnimActivity" />
+        <activity
+            android:name=".ui.activity.main.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- LoginActivity -->
+        <activity
+            android:name=".ui.activity.login.LoginActivity"
+            android:screenOrientation="portrait" /> <!-- web_view -->
+        <activity
+            android:name=".ui.activity.web_view.WebViewActivity"
+            android:screenOrientation="portrait" /> <!-- View篇 -->
+        <activity
+            android:name=".ui.activity.view.ViewAndViewGroupActivity"
+            android:screenOrientation="portrait" /> <!-- 持久化篇 -->
+        <activity
+            android:name=".ui.activity.data_save.DataSaveActivity"
+            android:screenOrientation="portrait" /> <!-- 数据库 -->
+        <activity
+            android:name=".ui.activity.data_save.database.DataBaseActivity"
+            android:screenOrientation="portrait" /> <!-- 文件存储 -->
+        <activity
+            android:name=".ui.activity.data_save.file.FileSaveActivity"
+            android:screenOrientation="portrait" /> <!-- SP -->
+        <activity
+            android:name=".ui.activity.data_save.share_preference.SPActivity"
+            android:screenOrientation="portrait" /> <!-- 四大组件 -->
+        <activity
+            android:name=".ui.activity.four_module.AndroidBasicActivity"
+            android:screenOrientation="portrait" /> <!-- 内容提供者 -->
+        <activity
+            android:name=".ui.activity.four_module.content_provide.ContentProviderActivity"
+            android:screenOrientation="portrait" /> <!-- 通知 -->
+        <activity
+            android:name=".ui.activity.view.notification.NotificationActivity"
+            android:screenOrientation="portrait" /> <!-- 网络篇 -->
+        <activity
+            android:name=".ui.activity.internet.InternetActivity"
+            android:screenOrientation="portrait" /> <!-- 多线程 -->
+        <activity
+            android:name=".ui.activity.thread.MultiThreadActivity"
+            android:screenOrientation="portrait" /> <!-- 服务 -->
+        <activity
+            android:name=".ui.activity.four_module.service.ServiceTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.view.banner.BannerViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.view.SnowFallViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.view.SpringMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.view.ViewTouchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.view.KeyListenerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.third_party.ThirdPartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.third_party.map.MapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.third_party.map.GoogleMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.view.Calendar2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.advance.rxjava.RxJavaStudyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.advance.AdvanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.anim.AnimationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.anim.TweenAnimationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.anim.FrameAnimationActivity"
+            android:screenOrientation="portrait" /> <!-- 自定义View -->
+        <activity
+            android:name=".ui.activity.custom_view.CustomViewActivity"
+            android:screenOrientation="portrait" /> <!-- 图片选择框架 -->
+        <activity
+            android:name=".ui.activity.third_party.image_select.ImageSelectActivity"
+            android:screenOrientation="portrait" /> <!-- 转盘摇奖 -->
+        <activity
+            android:name=".ui.activity.view.SurfaceViewTestActivity"
+            android:screenOrientation="portrait" /> <!-- 弹幕 -->
+        <activity
+            android:name=".ui.activity.view.DanMuViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.anim.PropertyAnimatorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.anim.AnimatorSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.media.MultiMediaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.media.MediaPlayerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.media.SoundPoolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.media.VideoViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.media.MediaRecorderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.media.TakePhotoActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.view.ViewWidgetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.view.widget.TextViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.view.widget.EditTextActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.view.widget.ImageViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.view.widget.ManyWidgetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.view.widget.ViewFlipperActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.view.widget.StackViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.view.widget.SwitcherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.view.widget.DateTimeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.layout.LayoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.layout.WXSettingActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".ui.activity.four_module.service.MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".ui.activity.four_module.service.download.DownloadService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".ui.activity.thread.AlarmTestService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name=".receiver.ProximityAlertReceiver" />
+
+        <activity
+            android:name=".ui.activity.view.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.activity.view.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".ui.activity.java_basic.JavaBasicActivity" />
+    </application>
+
+</manifest>

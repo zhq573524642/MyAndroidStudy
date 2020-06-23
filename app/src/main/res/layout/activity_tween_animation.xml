@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_scale"
+            android:text="scale"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_alpha"
+            android:text="alpha"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_rotate"
+            android:text="rotate"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_translate"
+            android:text="translate"
+            android:textSize="@dimen/sp_12"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_set"
+            android:text="set"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_anim_target"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginLeft="@dimen/dp_20" />
+    <FrameLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/circle1"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:src="@drawable/shape_circle"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_130" />
+        <ImageView
+            android:id="@+id/circle2"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:src="@drawable/shape_circle"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_130" />
+        <ImageView
+            android:id="@+id/circle3"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:src="@drawable/shape_circle"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_130" />
+        <ImageView
+            android:id="@+id/circle4"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:src="@drawable/shape_circle"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_130" />
+        <ImageView
+            android:id="@+id/iv_circle"
+            android:src="@mipmap/ic_music_button"
+            android:layout_width="130dp"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_height="130dp"
+            android:focusable="true" />
+    </FrameLayout>
+</LinearLayout>

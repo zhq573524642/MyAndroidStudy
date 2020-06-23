@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_858585"
+    android:orientation="vertical">
+    <include layout="@layout/layout_common_title"/>
+ <LinearLayout
+     android:id="@+id/ll_parent_view"
+     android:layout_margin="@dimen/dp_20"
+     android:background="@color/colorPrimary"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical">
+     <Button
+         android:id="@+id/btn_get_param"
+         android:textColor="@color/color_white"
+         android:background="@color/color_FF0000"
+         android:text="获取参数"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+     <ImageView
+         android:id="@+id/iv_image"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@mipmap/ic_launcher" />
+     <TextView
+         android:id="@+id/tv_text"
+         android:padding="@dimen/dp_10"
+         android:text="这是一个可以拖动的文字"
+         android:textSize="@dimen/sp_20"
+         android:textColor="@color/color_404040"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+ </LinearLayout>
+
+</LinearLayout>

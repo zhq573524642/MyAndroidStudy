@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.anim.PathMeasureAnimActivity">
+    <include layout="@layout/layout_common_title"/>
+    <Button
+        android:id="@+id/btn_progress_add"
+        android:text="+10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_progress_dec"
+        android:text="-10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<!--    <com.zhq.exclusivememory.ui.activity.anim.view.TestPathMeasureView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+    <com.zhq.exclusivememory.ui.activity.anim.view.CircleProgressView
+        android:id="@+id/circle_progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

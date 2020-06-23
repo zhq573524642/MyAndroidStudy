@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10">
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_item_1"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_45"
+            android:layout_gravity="end|bottom"
+            android:src="@mipmap/ic_menu_1"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_item_2"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_45"
+            android:layout_gravity="end|bottom"
+            android:src="@mipmap/ic_menu_2" />
+
+        <ImageView
+            android:id="@+id/iv_item_3"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_45"
+            android:layout_gravity="end|bottom"
+            android:src="@mipmap/ic_menu_3"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_item_4"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_45"
+            android:layout_gravity="end|bottom"
+            android:src="@mipmap/ic_menu_4"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_item_5"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_45"
+            android:layout_gravity="end|bottom"
+            android:src="@mipmap/ic_menu_5"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/btn_open_menu"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="end|bottom"
+            android:src="@mipmap/ic_menu_btn" />
+    </FrameLayout>
+</LinearLayout>

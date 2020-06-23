@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_title" />
+
+    <Button
+        android:id="@+id/btn_media_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MediaPlayer"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_sound_pool"
+        android:textAllCaps="false"
+        android:text="SoundPoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="VideoView"
+        android:textAllCaps="false"
+        android:id="@+id/btn_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="MediaRecorder"
+        android:textAllCaps="false"
+        android:id="@+id/btn_media_recorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="拍照"
+        android:id="@+id/btn_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

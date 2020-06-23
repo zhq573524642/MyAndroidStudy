@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:background="@color/color_white"
+        android:gravity="center"
+        tools:text="收货人信息为当前信息"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_16" />
+    <TextView
+        android:layout_height="@dimen/dp_1"
+        android:layout_width="match_parent"
+        android:background="@color/color_f2f2f2" />
+</LinearLayout>

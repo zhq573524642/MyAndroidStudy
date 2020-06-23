@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+  <include layout="@layout/layout_common_title"/>
+  <Button
+      android:id="@+id/btn_service"
+      android:text="Service服务"
+      android:textAllCaps="false"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_content_provider"
+        android:text="内容提供者"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
